@@ -22,11 +22,11 @@ function Main() {
       ...inputs,
       [name]: value,
     });
-    console.log(inputs);
   }
 
   function handleSubmit() {
-    let bmiScore = inputs.weight / ((inputs.height / 100) * (inputs.height / 100));
+    let bmiScore =
+      inputs.weight / ((inputs.height / 100) * (inputs.height / 100));
     bmiScore = bmiScore.toFixed(2);
 
     if (bmiScore < 18.5) {
