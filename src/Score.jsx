@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Score({ score, text }) {
-  const [refreshKey, setRefreshKey] = useState(Math.random());
-
-  React.useEffect(() => {
-    setRefreshKey(Math.random());
-  }, [score, text]);
-
+function Score({score, text}) {
   return (
-    <div className="score" key={refreshKey}>
+    <div className="score">
       <p className="bmiScore">Your BMI is: {score}</p>
       <p className="score-text">{text}</p>
     </div>

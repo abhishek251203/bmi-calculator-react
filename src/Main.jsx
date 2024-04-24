@@ -39,7 +39,7 @@ function Main() {
         score: bmiScore,
         text: "You are Normal",
       });
-    } else if (bmiScore >= 24.9 && bmiScore < 29.9) {
+    } else if (bmiScore >= 24.9) {
       setOutputs({
         score: bmiScore,
         text: "You are Overweight",
